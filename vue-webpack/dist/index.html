@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" type="text/css" href="./index.css" />
+
+<body>
+
+    <div id="demo">
+        
+        <div class="tab">
+                <a href="javascript:;" @click="index=1" class="{index =1}">
+                        1 </a>
+                    <a href="javascript:;" @click="index=2" class="{index = 2}">
+                        2</a>
+                    </a>
+                    <a href="javascript:;" @click="index=3" class="{index =3}">
+                        3</a>
+                    </a>
+                    <a href="javascript:;" @click="index=4" class="{index =4}">
+                        4</a>
+             </div> 
+      
+             <div class="change">
+                    <div v-show="index ==1">
+                            <img src="01.png" class="div1" alt="Image">
+                        </div>
+                        <div v-show="index == 2"> <img src="4.jpg" class="div2" alt="Image"></div>
+                
+                        <div v-show="index == 3"> <img src="5.jpg" class="div3" alt="Image"></div>
+                
+                        <div v-show="index == 4"> <img src="6.jpg" class="div4" alt="Image"></div>
+                    </div>
+                    </div>
+                </div>
+    
+
+
+       
+    </div>
+    <script src="../src/vue.js" ></script>
+    <!-- <script src="bundle.js"></script> -->
+  
+    <script>
+    // const Vue = require('vue');
+const vm = new Vue({
+  
+    el: '#demo',
+    data: {
+        index: 1
+    }
+
+})
+    
+    </script>
+
+
+</body>
+
+</html>
